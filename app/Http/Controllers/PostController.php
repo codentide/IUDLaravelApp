@@ -31,7 +31,7 @@ class PostController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(CreatePostRequest $request)
+   public function store(CreatePostRequest $request)
     {
         Post::create($request->all());
         return redirect()->route('posts.index')->with('success', 'Post created successfully');
