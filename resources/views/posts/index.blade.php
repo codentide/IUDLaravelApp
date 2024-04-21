@@ -19,7 +19,7 @@
                     <tr class="align-middle">
                         <td scope="col">{{ $post->id }}</td>
                         <td>{{ $post->title }}</td>
-                        <td>{{ $post->content }}</td>
+                        <td>{!! html_entity_decode($post->content) !!}</td>
                         <td>
                             @foreach ($categories as $category)
                                 {{-- Si category_id coincide con el category_id del post muestra el category_name de dicho id --}}

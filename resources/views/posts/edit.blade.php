@@ -29,7 +29,7 @@
                             <div class="form-group mb-3">
                                 <label for="category_id">Category</label>
                                 <select name="category_id" id="category_id" class="form-control">
-                                    <option>Seleccione una categoría</option>
+                                    <option disabled>Seleccione una categoría</option>
                                     @foreach ($categories as $category)
                                         <option value="{{ $category->id }}"
                                             {{ $category->id == $post->category_id ? 'selected' : '' }}>
